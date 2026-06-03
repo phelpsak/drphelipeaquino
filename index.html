@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Phelipe Aquino | Estética Avançada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Estética Clean e Minimalista */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            background-color: #F9F9F9; /* Fundo Neutro/Clean */
+            color: #2C2C2C; /* Texto Escuro Sofisticado */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+        .container { 
+            width: 100%; 
+            max-width: 450px; /* Otimizado para Celular */
+            background: #FFFFFF; 
+            min-height: 100vh;
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.02);
+        }
+        /* Cabeçalho */
+        header { text-align: center; margin-bottom: 35px; }
+        .logo-sub { 
+            font-size: 11px; 
+            text-transform: uppercase; 
+            letter-spacing: 4px; 
+            color: #8C8C8C; 
+            margin-bottom: 8px;
+        }
+        h1 { 
+            font-size: 22px; 
+            font-weight: 400; 
+            letter-spacing: 1px; 
+            color: #1A1A1A;
+            margin-bottom: 4px;
+        }
+        .crbm { font-size: 11px; color: #A0A0A0; letter-spacing: 1px; }
+        
+        /* Introdução */
+        .intro { 
+            text-align: center; 
+            font-size: 14px; 
+            font-weight: 300; 
+            color: #555555; 
+            margin-bottom: 40px; 
+            padding: 0 10px;
+        }
+        
+        /* Links/Botões de Procedimentos */
+        .links-group { width: 100%; display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+        .btn-service {
+            width: 100%;
+            padding: 16px;
+            background-color: #FAFAFA;
+            border: 1px solid #EAEAEA;
+            border-radius: 4px;
+            color: #333333;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .btn-service:hover { background-color: #F0F0F0; border-color: #D0D0D0; }
+        
+        /* Botão de Ação Principal (WhatsApp) */
+        .btn-cta {
+            width: 100%;
+            padding: 18px;
+            background-color: #1A1A1A; /* Preto Sofisticado */
+            color: #FFFFFF;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: background 0.3s;
+        }
+        .btn-cta:hover { background-color: #333333; }
+        
+        /* Rodapé */
+        footer { margin-top: auto; text-align: center; font-size: 10px; color: #B0B0B0; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-sub">Biomedicina Avançada</div>
+            <h1>Dr. Phelipe Aquino</h1>
+            <div class="crbm">CRBM 39219</div>
+        </header>
+
+        <section class="intro">
+            Gerenciamento do envelhecimento e tratamentos injetáveis com embasamento científico, alta tecnologia e naturalidade. Desenvolvido para o público masculino premium.
+        </section>
+
+        <div class="links-group">
+            <!-- Links direcionando direto para o seu WhatsApp com mensagens personalizadas -->
+            <a href="https://wa.me/11985503506?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Botox" class="btn-service" target="_blank">Toxina Botulínica (Botox)</a>
+            <a href="https://wa.me/SEUNUMERO?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Bioestimuladores" class="btn-service" target="_blank">Bioestimuladores de Colágeno</a>
+            <a href="https://wa.me/SEUNUMERO?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Harmonização" class="btn-service" target="_blank">Harmonização Facial Masculina</a>
+            <a href="https://wa.me/SEUNUMERO?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Tratamento%20Capilar" class="btn-service" target="_blank">Terapia Capilar Avançada (MMP)</a>
+        </div>
+
+        <!-- Substitua SEUNUMERO pelo seu número com DDD (ex: 5511999999999) -->
+        <a href="https://wa.me/SEUNUMERO?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="btn-cta" target="_blank">
+            Agendar Avaliação Exclusiva
+        </a>
+
+        <footer>
+            <p>São Paulo - SP</p>
+        </footer>
+    </div>
+
+</body>
+</html>
