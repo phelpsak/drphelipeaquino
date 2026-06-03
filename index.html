@@ -12,15 +12,15 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
             font-family: 'Montserrat', sans-serif; 
-            background-color: #F9F9F9; /* Fundo Neutro/Clean */
-            color: #2C2C2C; /* Texto Escuro Sofisticado */
+            background-color: #F9F9F9; 
+            color: #2C2C2C; 
             line-height: 1.6;
             display: flex;
             justify-content: center;
         }
         .container { 
             width: 100%; 
-            max-width: 450px; /* Otimizado para Celular */
+            max-width: 450px; 
             background: #FFFFFF; 
             min-height: 100vh;
             padding: 40px 24px;
@@ -58,7 +58,7 @@
         }
         
         /* Links/Botões de Procedimentos */
-        .links-group { width: 100%; display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; }
+        .links-group { width: 100%; display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px; }
         .btn-service {
             width: 100%;
             padding: 16px;
@@ -75,11 +75,32 @@
         }
         .btn-service:hover { background-color: #F0F0F0; border-color: #D0D0D0; }
         
-        /* Botão de Ação Principal (WhatsApp) */
+        /* Botão do Instagram (Estilo mais sutil/vazado para manter a hierarquia) */
+        .btn-instagram {
+            width: 100%;
+            padding: 16px;
+            background-color: transparent;
+            border: 1px solid #1A1A1A;
+            border-radius: 4px;
+            color: #1A1A1A;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-top: 8px;
+            transition: all 0.3s ease;
+        }
+        .btn-instagram:hover { 
+            background-color: #1A1A1A; 
+            color: #FFFFFF; 
+        }
+
+        /* Botão de Ação Principal (WhatsApp CTA) */
         .btn-cta {
             width: 100%;
             padding: 18px;
-            background-color: #1A1A1A; /* Preto Sofisticado */
+            background-color: #1A1A1A; 
             color: #FFFFFF;
             border-radius: 4px;
             text-decoration: none;
@@ -89,12 +110,13 @@
             text-transform: uppercase;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: 10px;
             transition: background 0.3s;
         }
         .btn-cta:hover { background-color: #333333; }
         
         /* Rodapé */
-        footer { margin-top: auto; text-align: center; font-size: 10px; color: #B0B0B0; letter-spacing: 1px; }
+        footer { margin-top: auto; text-align: center; font-size: 10px; color: #B0B0B0; letter-spacing: 1px; padding-top: 40px; }
     </style>
 </head>
 <body>
@@ -112,14 +134,17 @@
 
         <div class="links-group">
             <!-- Links direcionando direto para o seu WhatsApp com mensagens personalizadas -->
-            <a href="https://wa.me/11985503506?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Botox" class="btn-service" target="_blank">Toxina Botulínica (Botox)</a>
-            <a href="https://wa.me/11985503506?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Bioestimuladores" class="btn-service" target="_blank">Bioestimuladores de Colágeno</a>
-            <a href="https://wa.me/11985503506?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Harmonização" class="btn-service" target="_blank">Harmonização Facial Masculina</a>
-            <a href="https://wa.me/11985503506?text=Olá,%20gostaria de%20saber%20mais%20sobre%20Tratamento%20Capilar" class="btn-service" target="_blank">Terapia Capilar Avançada (MMP)</a>
+            <a href="https://wa.me/5511985503506?text=Olá,%20Dr.%20Phelipe.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20a%20Toxina%20Botulínica%20(Botox)." class="btn-service" target="_blank">Toxina Botulínica (Botox)</a>
+            <a href="https://wa.me/5511985503506?text=Olá,%20Dr.%20Phelipe.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20os%20Bioestimuladores%20de%20Colágeno." class="btn-service" target="_blank">Bioestimuladores de Colágeno</a>
+            <a href="https://wa.me/5511985503506?text=Olá,%20Dr.%20Phelipe.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20a%20Harmonização%20Facial%20Masculina." class="btn-service" target="_blank">Harmonização Facial Masculina</a>
+            <a href="https://wa.me/5511985503506?text=Olá,%20Dr.%20Phelipe.%20Gostaria%20de%20saber%20mais%20informações%20sobre%20a%20Terapia%20Capilar%20Avançada%20(MMP)." class="btn-service" target="_blank">Terapia Capilar Avançada (MMP)</a>
+            
+            <!-- Link do Instagram -->
+            <a href="https://instagram.com/drphelipeaquino" class="btn-instagram" target="_blank">Acompanhe no Instagram</a>
         </div>
 
-       
-        <a href="https://wa.me/11985503506?text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação" class="btn-cta" target="_blank">
+        <!-- Botão Principal de Agendamento -->
+        <a href="https://wa.me/5511985503506?text=Olá,%20Dr.%20Phelipe.%20Gostaria%20de%20agendar%20uma%20avaliação%20estética%20exclusiva." class="btn-cta" target="_blank">
             Agendar Avaliação Exclusiva
         </a>
 
