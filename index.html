@@ -20,7 +20,48 @@
     --radius-md: 12px;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-
+.sobre-mim-accordion {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 25px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+.sobre-mim-accordion summary {
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1d4ed8;
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+.sobre-mim-accordion summary:hover {
+    background: #f8fafc;
+}
+.sobre-mim-accordion summary::-webkit-details-marker {
+    display: none;
+}
+.sobre-conteudo {
+    padding: 0 20px 20px 20px;
+    font-size: 13.5px;
+    color: #475569;
+    line-height: 1.6;
+    text-align: justify;
+    border-top: 1px dashed #e2e8f0;
+    margin-top: 5px;
+    padding-top: 15px;
+}
+.sobre-conteudo p {
+    margin: 0 0 10px 0;
+}
+.sobre-conteudo p:last-child {
+    margin: 0;
+}
   *{ box-sizing: border-box; margin: 0; padding: 0; }
 
   html{ -webkit-text-size-adjust: 100%; }
@@ -150,7 +191,15 @@
   }
 
   .btn svg{ flex-shrink: 0; }
-
+  
+<details class="sobre-mim-accordion">
+    <summary>Conheça o Dr. Phelipe Aquino ▾</summary>
+    <div class="sobre-conteudo">
+        <p>Sou Biomédico Esteta movido pela paixão de realçar a beleza de forma natural e segura. Especialista em Estética Regenerativa e injetáveis avançados, acredito que cada rosto possui uma arquitetura única que merece ser respeitada e valorizada.</p>
+        <p>Além da prática clínica na Avenida Paulista, dedico-me continuamente à padronização de protocolos técnicos e ao aprimoramento científico. Meu objetivo não é transformar quem você é, mas entregar a sua melhor e mais confiante versão.</p>
+    </div>
+</details>
+  
   /* ---------- Section title ---------- */
   .section-title{
     font-size: 13px;
