@@ -20,48 +20,7 @@
     --radius-md: 12px;
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-.sobre-mim-accordion {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto 25px auto;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    border: 1px solid #e2e8f0;
-    overflow: hidden;
-}
-.sobre-mim-accordion summary {
-    padding: 16px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #1d4ed8;
-    cursor: pointer;
-    list-style: none;
-    text-align: center;
-    transition: background 0.2s;
-}
-.sobre-mim-accordion summary:hover {
-    background: #f8fafc;
-}
-.sobre-mim-accordion summary::-webkit-details-marker {
-    display: none;
-}
-.sobre-conteudo {
-    padding: 0 20px 20px 20px;
-    font-size: 13.5px;
-    color: #475569;
-    line-height: 1.6;
-    text-align: justify;
-    border-top: 1px dashed #e2e8f0;
-    margin-top: 5px;
-    padding-top: 15px;
-}
-.sobre-conteudo p {
-    margin: 0 0 10px 0;
-}
-.sobre-conteudo p:last-child {
-    margin: 0;
-}
+
   *{ box-sizing: border-box; margin: 0; padding: 0; }
 
   html{ -webkit-text-size-adjust: 100%; }
@@ -191,15 +150,60 @@
   }
 
   .btn svg{ flex-shrink: 0; }
-  
-<details class="sobre-mim-accordion">
-    <summary>Conheça o Dr. Phelipe Aquino ▾</summary>
-    <div class="sobre-conteudo">
-        <p>Sou Biomédico Esteta movido pela paixão de realçar a beleza de forma natural e segura. Especialista em Estética Regenerativa e injetáveis avançados, acredito que cada rosto possui uma arquitetura única que merece ser respeitada e valorizada.</p>
-        <p>Além da prática clínica na Avenida Paulista, dedico-me continuamente à padronização de protocolos técnicos e ao aprimoramento científico. Meu objetivo não é transformar quem você é, mas entregar a sua melhor e mais confiante versão.</p>
-    </div>
-</details>
-  
+
+  /* ---------- Sobre (sanfona) ---------- */
+  .about{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  .about-toggle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    padding: 16px 18px;
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-strong);
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .about-toggle .chevron{
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+    color: var(--text-soft);
+  }
+
+  .about-toggle[aria-expanded="true"] .chevron{
+    transform: rotate(180deg);
+  }
+
+  .about-panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .about-panel-inner{
+    padding: 0 18px 18px;
+  }
+
+  .about-panel-inner p{
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--text-soft);
+  }
+
   /* ---------- Section title ---------- */
   .section-title{
     font-size: 13px;
@@ -351,13 +355,27 @@
       Fale no WhatsApp
     </a>
 
-    <a class="btn btn-secondary" href="https://instagram.com/drphelipeaquino" target="_blank" rel="noopener">
+    <a class="btn btn-secondary" href="https://instagram.com/dr.phelipeaquino" target="_blank" rel="noopener">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
       </svg>
       Instagram
     </a>
   </nav>
+
+  <div class="about">
+    <button class="about-toggle" id="aboutToggle" aria-expanded="false" aria-controls="aboutPanel">
+      Sobre o Dr. Phelipe
+      <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+    <div class="about-panel" id="aboutPanel">
+      <div class="about-panel-inner">
+        <p>Biomédico Esteta apaixonado por realçar a beleza de forma natural e segura. Atuo com Estética Regenerativa e injetáveis avançados, respeitando a arquitetura única de cada rosto. Dedico-me à padronização de protocolos e ao aprimoramento científico contínuo — meu compromisso é entregar a sua melhor e mais confiante versão.</p>
+      </div>
+    </div>
+  </div>
 
   <section aria-labelledby="resultados-titulo">
     <h2 class="section-title" id="resultados-titulo">Resultados</h2>
@@ -393,6 +411,20 @@
 <script>
 (function(){
   "use strict";
+
+  var aboutToggle = document.getElementById("aboutToggle");
+  var aboutPanel = document.getElementById("aboutPanel");
+
+  aboutToggle.addEventListener("click", function(){
+    var isOpen = aboutToggle.getAttribute("aria-expanded") === "true";
+    aboutToggle.setAttribute("aria-expanded", String(!isOpen));
+
+    if (isOpen){
+      aboutPanel.style.maxHeight = null;
+    } else {
+      aboutPanel.style.maxHeight = aboutPanel.scrollHeight + "px";
+    }
+  });
 
   var galleryItems = document.querySelectorAll(".gallery-item");
   var lightbox = document.getElementById("lightbox");
